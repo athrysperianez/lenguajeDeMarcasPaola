@@ -15,7 +15,7 @@ exports.phoneIsForbidden = functions.database.ref("/messages/{pushId}/text").onC
 
 });
 
-exports.emojify = function.database.ref("/messages/(pushId)/text").onCreate(myHandler =>{
+exports.emojify = functions.database.ref("/messages/(pushId)/text").onCreate(myHandler =>{
 /**  console.log("Emojify...");
   var orData = myHandler.data.val();
   var emojiData = emojifyText(orData);
